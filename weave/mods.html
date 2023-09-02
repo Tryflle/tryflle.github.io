@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* Resetting some default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles for body and header */
+        body {
+            background-color: #1b242e; /* Updated background color */
+            color: #ECF0F1; /* Light text color */
+            font-family: Arial, sans-serif; /* Specify a font */
+            text-align: center; /* Center-align the content */
+            margin: 0; /* Remove default margin */
+            overflow: hidden; /* Hide overflow to prevent scrolling */
+        }
+
+        header {
+            background-color: #0E1217; /* Updated top bar background color */
+            padding: 20px;
+        }
+
+        /* Style the top bar links */
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #ECF0F1;
+            font-weight: bold; /* Make the navigation links bold */
+        }
+
+        /* Styles for the projects section */
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
+            padding: 20px; /* Add padding to the content area */
+            box-sizing: border-box; /* Include padding in the height calculation */
+            overflow-x: hidden; /* Hide horizontal overflow */
+        }
+
+        /* Style the project containers */
+        .project {
+            background-color: rgba(14, 18, 23, 0.8); /* Semi-transparent rectangle background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            margin: 20px; /* Adjust vertical and horizontal margin */
+            max-width: 600px; /* Adjust the width as needed */
+        }
+
+        /* Optional: Style project titles and descriptions */
+        h2 {
+            font-size: 24px;
+        }
+
+        p.project-description {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Style the download button */
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #004554; /* Button color */
+            color: #ECF0F1; /* Text color */
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #00272B; /* Hover color */
+        }
+
+        footer {
+            background-color: #0E1217; /* Updated bottom bar background color */
+            padding: 10px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #ECF0F1; /* Light text color in the footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://tryflle.github.io/index.html">Home</a></li>
+                <li><a href="https://github.com/tryflle">GitHub</a></li>
+                <li><a href="https://tryflle.github.io/hi.html">Hi</a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Surprise</a></li>
+                <li><a href="https://tryflle.github.io/weave/mods.html">Mods</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="projects-container">
+        <div class="project">
+            <h2>WeaveBasicFlight</h2>
+            <p class="project-description">
+                WeaveBasicFlight is a Weave mod that allows you to fly in Minecraft without
+				the need for creative mode.
+                <br>
+                <a class="download-button" href="https://github.com/Tryflle/weavebasicflight" target="_blank">Download WeaveBasicFlight</a>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>WeaveSlowMining</h2>
+            <p class="project-description">
+			WeaveSlowMining is a Weave mod that allows you to edit the speed of the mining animation
+			in Minecraft.
+                <br>
+                <a class="download-button" href="https://github.com/Tryflle/WeaveSlowMining" target="_blank">Download WeaveSlowMining</a>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>WeaveQuickReport</h2>
+            <p class="project-description">
+			QuickReportMod rewritten for Weave. Allows you to report someone on Hypixel
+			for all reasons in one command. Also alerts you if they are in your game and has autododge.
+			<br>
+                <a class="download-button" href="https://github.com/Tryflle/WeaveQuickReport" target="_blank">Download WeaveQuickReport</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 literally nobody copy and paste this if u want</p>
+    </footer>
+</body>
+</html>
