@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Guides</title>
     <style>
         /* Resetting some default margin and padding */
         * {
@@ -43,8 +43,8 @@
             font-weight: bold; /* Make the navigation links bold */
         }
 
-        /* Styles for the projects section */
-        .projects-container {
+        /* Styles for the button section */
+        .button-container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -55,38 +55,32 @@
             overflow-x: hidden; /* Hide horizontal overflow */
         }
 
-        /* Style the project containers */
-        .project {
-            background-color: rgba(14, 18, 23, 0.8); /* Semi-transparent rectangle background */
-            border-radius: 10px; /* Rounded corners */
-            padding: 20px;
-            margin: 20px; /* Adjust vertical and horizontal margin */
-            max-width: 600px; /* Adjust the width as needed */
+        /* Style the title */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
-        /* Optional: Style project titles and descriptions */
-        h2 {
-            font-size: 24px;
-        }
-
-        p.project-description {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        /* Style the download button */
-        .download-button {
-            display: inline-block;
-            padding: 10px 20px;
+        /* Style the buttons */
+        .button {
             background-color: #004554; /* Button color */
             color: #ECF0F1; /* Text color */
-            text-decoration: none;
+            padding: 15px 30px;
+            border: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.2s;
         }
 
-        .download-button:hover {
+        .button:hover {
             background-color: #00272B; /* Hover color */
+        }
+
+        /* Optional: Style button descriptions */
+        p.button-description {
+            font-size: 16px;
         }
 
         footer {
@@ -113,41 +107,21 @@
                 <li><a href="https://tryflle.github.io/hi.html">Hi</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Surprise</a></li>
                 <li><a href="https://tryflle.github.io/weave/mods.html">Mods</a></li>
-				<li><a href="https://tryflle.github.io/guides.html">Mods</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="projects-container">
-        <div class="project">
-            <h2>WeaveBasicFlight</h2>
-            <p class="project-description">
-                WeaveBasicFlight is a Weave mod that allows you to fly in Minecraft without
-				the need for creative mode.
-                <br>
-                <a class="download-button" href="https://github.com/Tryflle/weavebasicflight" target="_blank">Download WeaveBasicFlight</a>
-            </p>
-        </div>
-
-        <div class="project">
-            <h2>WeaveSlowMining</h2>
-            <p class="project-description">
-			WeaveSlowMining is a Weave mod that allows you to edit the speed of the mining animation
-			in Minecraft.
-                <br>
-                <a class="download-button" href="https://github.com/Tryflle/WeaveSlowMining" target="_blank">Download WeaveSlowMining</a>
-            </p>
-        </div>
-
-        <div class="project">
-            <h2>WeaveQuickReport</h2>
-            <p class="project-description">
-			QuickReportMod rewritten for Weave. Allows you to report someone on Hypixel
-			for all reasons in one command. Also alerts you if they are in your game and has autododge.
-			<br>
-                <a class="download-button" href="https://github.com/Tryflle/WeaveQuickReport" target="_blank">Download WeaveQuickReport</a>
-            </p>
-        </div>
+    <div class="button-container">
+        <h1>Guides</h1>
+        
+        <button class="button" onclick="location.href='https://example.com/link1';">LCQT Guide</button>
+        <p class="button-description">How to use Weave Loader with LCQT 2</p>
+        
+        <button class="button" onclick="location.href='https://example.com/link2';">LCQT 2 Guide</button>
+        <p class="button-description">How to use Weave Loader with LCQT 2</p>
+        
+        <button class="button" onclick="location.href='https://example.com/link3';">LLI Guide</button>
+        <p class="button-description">How to use Weave Loader with LLI</p>
     </div>
 
     <footer>
