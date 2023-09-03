@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guides</title>
+    <title>LCQT Guide</title>
     <style>
         /* Resetting some default margin and padding */
         * {
@@ -43,8 +43,8 @@
             font-weight: bold; /* Make the navigation links bold */
         }
 
-        /* Styles for the button section */
-        .button-container {
+        /* Styles for the content section */
+        .content-container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -61,26 +61,37 @@
             margin-bottom: 20px;
         }
 
-        /* Style the buttons */
-        .button {
-            background-color: #004554; /* Button color */
-            color: #ECF0F1; /* Text color */
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            margin: 20px;
-            cursor: pointer;
+        /* Style the bullet points */
+        .bullet-points {
+            text-align: left;
+            max-width: 600px; /* Adjust the width as needed */
+            margin: 20px auto; /* Center-align and add margin */
+        }
+
+        .bullet-points h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .bullet-points ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .bullet-points li {
             font-size: 18px;
-            transition: background-color 0.2s;
+            margin-bottom: 10px;
         }
 
-        .button:hover {
-            background-color: #00272B; /* Hover color */
-        }
-
-        /* Optional: Style button descriptions */
-        p.button-description {
-            font-size: 16px;
+        /* Style text bubbles */
+        .text-bubble {
+            background-color: #004554;
+            color: #ECF0F1;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px; /* Adjust the width as needed */
+            text-align: left;
+            margin: 20px auto; /* Center-align and add margin */
         }
 
         footer {
@@ -107,22 +118,44 @@
                 <li><a href="https://tryflle.github.io/hi.html">Hi</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Surprise</a></li>
                 <li><a href="https://tryflle.github.io/weave/mods.html">Mods</a></li>
-				<li><a href="https://tryflle.github.io/guide/guides.html">Guides</a></li>
+                <li><a href="https://tryflle.github.io/guide/guides.html">Guides</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="button-container">
-        <h1>Guides</h1>
-        
-        <button class="button" onclick="location.href='https://tryflle.github.io/guide/lcqt.html';">LCQT Guide</button>
-        <p class="button-description">How to use Weave Loader with LCQT 2</p>
-        
-        <button class="button" onclick="location.href='https://example.com/link2';">LCQT 2 Guide (soon)</button>
-        <p class="button-description">How to use Weave Loader with LCQT 2</p>
-        
-        <button class="button" onclick="location.href='https://example.com/link3';">LLI Guide (soon)</button>
-        <p class="button-description">How to use Weave Loader with LLI</p>
+    <div class="content-container">
+        <section>
+            <h1>Guides</h1>
+
+            <div class="bullet-points">
+                <h2>Windows</h2>
+                <ul>
+                    <li><a href="https://github.com/Youded-byte/lunar-client-qt/releases/latest">Download windows.zip from this github.</a></li>
+                    <li>Extract the zip file.</li>
+                    <li>Open "lunar-client-qt.exe"</li>
+					<li><a href="https://github.com/Weave-MC/Weave-Loader/releases/latest">Download the Weave Loader Agent</a></li>
+					<li>Head into the agents tab and add the Weave-Loader.jar file you downloaded.</li>
+					<li>Now, go into the general tab and check "Use Custom JRE". </li>
+					<li>Then navigate to C:/Users/YOURPROFILE/.lunarclient/jre/4dcd.../zulu17../bin</li>
+					<li>Now, select javaw.exe.</li>
+					<li>You can now add your mods to the mods tab and launch, just ensure you don't check "Enable Weave".</li>
+                </ul>
+            </div>
+
+            <div class="bullet-points">
+                <h2>Unix</h2>
+                <ul>
+                    <li>soon</li>
+                    <li>so</li>
+                    <li>learn</li>
+                </ul>
+            </div>
+
+            <div class="text-bubble">
+                <p>Thanks for following the tutorial, if you have any questions. Ask them in the Weave discord.</p>
+				<p><a href="https://discord.gg/vRzZWSBkfY">Weave Discord Invite</a></p>
+            </div>
+        </section>
     </div>
 
     <footer>
