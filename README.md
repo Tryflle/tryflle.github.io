@@ -1,4 +1,2 @@
 # tryflle.github.io
-showcasing my professional web design
-this is the best website you will ever visit
-https://tryflle.github.io
+A Sylveon themed portfolio website I made to learn HTML/CSS. The old version of this website was terrible, so I finally made it good. View at https://tryflle.github.io !
