@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tryfle - Home</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <style>
+            body {
+                text-align: center;
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                /*background: linear-gradient(to left, #b5698f , #d978e4);*/
+                background: -webkit-radial-gradient(circle, #b5698f, #d978e4);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+
+            .bg {
+                backdrop-filter: none;
+                background-color: rgba(1, 1, 1, 0.07);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                width: 70%;
+                max-width: 1200px;
+                height: 35%;
+                max-height: 1000px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 768px) {
+                .bg {
+                    height: 55%;
+                }
+            }
+
+            .link {
+                color: violet;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+            <h1>Tryfle</h1>
+            <p>Tryfle is a learning developer who uses Koltin, C#, CSS/HTML and Java.</p>
+            <img src="images/sylveon.gif" style="width: 70px;" alt="Sylveon">
+            <h1></h1><a class= "link" href="projects.html">My Projects</a></h1>
+            <p class = copyright>&copy; Tryfle 2024</p>
+        </div>
+    </body>
+</html>
